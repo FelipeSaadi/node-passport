@@ -9,3 +9,7 @@ router.get('/ping', (req, res) => {
 })
 
 router.get('/users', privateRoute, userController.getAll)
+
+router.post('/register', userController.register)
+
+router.post('/login', userController.login)
